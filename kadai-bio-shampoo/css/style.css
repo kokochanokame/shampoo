@@ -1,0 +1,1881 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Hannari";
+  src: url("../fonts/HannariMincho-Regular.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Noto";
+  src: url("../fonts/NotoSansJP-Medium.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gen";
+  src: url("../fonts/GenShinGothic-Heavy.woff") format("woff");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Gen";
+  src: url("../fonts/GenShinGothic-Medium.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher-Italic.woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Philosopher", "Noto", "Hannari", "Gen", sans-serif;
+  font-size: 16px;
+  color: #212529;
+  background-color: #fff;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.animate__animated {
+  opacity: 0;
+}
+
+h1, h2, h3, p, figure,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 79.7950219619vw;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 80vw;
+  }
+}
+
+.pc-only {
+  display: block;
+}
+@media screen and (max-width: 1024px) {
+  .pc-only {
+    display: none;
+  }
+}
+
+.sp-only {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .sp-only {
+    display: block;
+  }
+}
+
+.df {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .df {
+    display: block;
+  }
+}
+
+/*============================================================
+# 白髪染めで傷んだ髪が変わる。
+============================================================*/
+.header {
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 66.6178623719vw;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 144vw;
+    background-image: url(../img/header_sp.jpg);
+    padding-top: 144%;
+  }
+}
+
+.header-top {
+  position: absolute;
+  display: block;
+  top: 4.9048316252vw;
+  right: 6.0761346999vw;
+  width: 41.9472913616vw;
+  margin-bottom: 3.5871156662vw;
+}
+@media screen and (max-width: 1024px) {
+  .header-top {
+    top: 5.6vw;
+    right: 15.7333333333vw;
+    width: 69.7050938338vw;
+    height: 24.2666666667vw;
+  }
+}
+
+.header-h1 {
+  white-space: nowrap;
+  font-weight: normal;
+  font-family: "Hannari";
+  color: #63977e;
+  font-size: 5.1244509517vw;
+  line-height: 1.14;
+  letter-spacing: 0.6149341142vw;
+}
+@media screen and (max-width: 1024px) {
+  .header-h1 {
+    font-size: 8.3146666667vw;
+    line-height: 1.199807569;
+    letter-spacing: 1.0262989096vw;
+  }
+}
+
+.header-sub {
+  font-size: 1.9765739385vw;
+  line-height: 1.29;
+  letter-spacing: 0.1639824305vw;
+}
+@media screen and (max-width: 1024px) {
+  .header-sub {
+    color: #fff;
+    font-size: 3.84vw;
+    line-height: 1.2;
+    letter-spacing: 0.3066666667vw;
+  }
+}
+
+.header-bottom {
+  position: absolute;
+  width: 41.9472913616vw;
+  bottom: 5.5636896047vw;
+  right: 6.149341142vw;
+  margin-top: 4.1727672035vw;
+}
+@media screen and (max-width: 1024px) {
+  .header-bottom {
+    margin-top: 0;
+    bottom: 4vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 76.8vw;
+  }
+}
+
+.header-figure {
+  width: 28.5505124451vw;
+  height: 26.8667642753vw;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .header-figure {
+    order: 2;
+    width: 38.4vw;
+    height: 36.0962566845vw;
+    margin: 0;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header-desc {
+    order: 1;
+  }
+}
+
+.text1 {
+  font-family:  "Noto";
+  font-weight: normal;
+  font-size: 2.4890190337vw;
+  line-height: 1.06;
+  letter-spacing: 0.0497803807vw;
+}
+@media screen and (max-width: 1024px) {
+  .text1 {
+    font-size: 3.84vw;
+    line-height: 1.2;
+    letter-spacing: 0.462962963vw;
+    color: #fff;
+  }
+}
+
+.en {
+  font-size: 2.4890190337vw;
+  line-height: 1.06;
+  letter-spacing: 0.0497803807vw;
+  font-family: "Philosopher";
+}
+@media screen and (max-width: 1024px) {
+  .en {
+    font-size: 3.84vw;
+    line-height: 1.2;
+    letter-spacing: 0.462962963vw;
+  }
+}
+
+.text1-span {
+  font-family:  "Noto";
+  font-weight: normal;
+  font-size: 2.4890190337vw;
+}
+@media screen and (max-width: 1024px) {
+  .text1-span {
+    font-size: 3.84vw;
+    color: #fff;
+  }
+}
+
+.pc-text {
+  white-space: nowrap;
+  font-family: "Hannari";
+  font-size: 3.2942898975vw;
+  line-height: 1.78;
+  letter-spacing: 0.1976573939vw;
+}
+
+.pc-desc {
+  display: block;
+}
+@media screen and (max-width: 1024px) {
+  .pc-desc {
+    display: none;
+  }
+}
+
+.sp-desc {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .sp-desc {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sp-text {
+    white-space: nowrap;
+    font-family: "Hannari";
+    display: block;
+    font-size: 4.896vw;
+    line-height: 1.1982570806;
+    letter-spacing: 0.871459695vw;
+    color: #fff;
+  }
+}
+
+/*============================================================
+# インスタグラムでも大人気
+============================================================*/
+.sns {
+  padding-top: 2.7818448023vw;
+  padding-bottom: 4.2459736457vw;
+}
+@media screen and (max-width: 1024px) {
+  .sns {
+    padding-top: 5.3333333333vw;
+    padding-bottom: 12vw;
+  }
+}
+
+.sns-h2 {
+  width: 65.8857979502vw;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .sns-h2 {
+    width: 68.2666666667vw;
+  }
+}
+
+.sns-sub {
+  margin-top: 1.317715959vw;
+  margin-bottom: 3.4407027818vw;
+  text-align: center;
+  font-size: 2.4890190337vw;
+  line-height: 1.06;
+  letter-spacing: 0.0248901903vw;
+}
+@media screen and (max-width: 1024px) {
+  .sns-sub {
+    font-size: 3.36vw;
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+}
+
+.sns-card {
+  border: 1px solid #a9a9a9;
+  width: 12.59vw;
+}
+@media screen and (max-width: 1024px) {
+  .sns-card {
+    width: 22.6666666667vw;
+  }
+}
+
+.sns-sample {
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-top: 0.7320644217vw;
+  margin-left: 0.7320644217vw;
+}
+.icon img {
+  width: 2.196193265vw;
+}
+@media screen and (max-width: 1024px) {
+  .icon img {
+    width: 3.7333333333vw;
+  }
+}
+
+.icon-fig {
+  margin-left: 0.2928257687vw;
+  font-size: 1.1713030747vw;
+  line-height: 2.25;
+}
+@media screen and (max-width: 1024px) {
+  .icon-fig {
+    font-size: 2.6666666667vw;
+    line-height: 1.5;
+    margin-left: 2.1333333333vw;
+  }
+}
+
+.sns-text {
+  line-height: 1.38;
+  font-size: 1.1713030747vw;
+  margin-top: 1.2445095168vw;
+  margin-bottom: 1.6837481698vw;
+  margin-right: 0.7320644217vw;
+  margin-left: 0.7320644217vw;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .sns-text {
+    margin-top: 1.2445095168vw;
+    margin-bottom: 1.6837481698vw;
+    margin-right: 1.8666666667vw;
+    margin-left: 1.8666666667vw;
+    font-size: 2.88vw;
+    line-height: 1.5;
+  }
+}
+
+.date {
+  font-family: "Noto";
+  text-align: right;
+  font-size: 1.1713030747vw;
+  line-height: 1.38;
+  margin-right: 0.7320644217vw;
+}
+@media screen and (max-width: 1024px) {
+  .date {
+    font-size: 2.88vw;
+    line-height: 1.5;
+    margin-right: 1.6vw;
+  }
+}
+
+/*============================================================
+# 自分の髪に満足していますか？
+============================================================*/
+.check {
+  background-image: url(../img/empathy.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 4.0263543192vw;
+  padding-bottom: 9.7vw;
+}
+@media screen and (max-width: 1024px) {
+  .check {
+    padding-top: 4vw;
+    padding-bottom: 19.4vw;
+    background-image: url(../img/empathy_sp.jpg);
+  }
+}
+
+.check-h2 {
+  font-weight: normal;
+  white-space: nowrap;
+  text-align: center;
+  font-family: "Hannari";
+  color: #63977e;
+  font-size: 5.4172767204vw;
+  line-height: 1.21;
+  letter-spacing: 0.3792093704vw;
+  margin-bottom: 8.3221083455vw;
+}
+@media screen and (max-width: 1024px) {
+  .check-h2 {
+    font-size: 5.28vw;
+    line-height: 1.196969697;
+    letter-spacing: 0.3706666667vw;
+    margin-bottom: 7.1333333333vw;
+  }
+}
+
+.check-item {
+  white-space: nowrap;
+  font-size: 2.0497803807vw;
+  line-height: 3.11;
+  letter-spacing: 0.1434846266vw;
+  padding-left: 3.7335285505vw;
+  position: relative;
+}
+.check-item::before {
+  position: absolute;
+  content: "";
+  width: 2.0497803807vw;
+  height: 1.9033674963vw;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(../img/check.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .check-item {
+    font-size: 3.36vw;
+    line-height: 2.380952381;
+    letter-spacing: 1.4814814815vw;
+    padding-left: 4.2666666667vw;
+  }
+  .check-item::before {
+    width: 3.2vw;
+    height: 2.6666666667vw;
+  }
+  .check-item + .check-item {
+    margin-top: 1.2266666667vw;
+  }
+}
+
+.etc {
+  font-size: 2.0497803807vw;
+  line-height: 3.11;
+  letter-spacing: 0.1434846266vw;
+}
+@media screen and (max-width: 1024px) {
+  .etc {
+    margin-top: 1.2266666667vw;
+    font-size: 3.36vw;
+    line-height: 1.5;
+  }
+}
+
+/*============================================================
+# これらの原因はシャンプーにありました
+============================================================*/
+.couse {
+  font-family: "Noto";
+  font-weight: normal;
+}
+
+.couse-1 {
+  position: relative;
+  background-image: url(../img/exhibit1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 4.1727672035vw;
+  padding-bottom: 9.2972181552vw;
+}
+@media screen and (max-width: 1024px) {
+  .couse-1 {
+    background-image: url(../img/exhibit1_sp.jpg);
+    padding-top: 3.7333333333vw;
+    padding-bottom: 9.0666666667vw;
+  }
+}
+
+.couse-2 {
+  background-image: url(../img/exhibit2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 6.588579795vw 0;
+}
+@media screen and (max-width: 1024px) {
+  .couse-2 {
+    background-image: url(../img/exhibit2_sp.jpg);
+    padding-top: 9.0666666667vw;
+    padding-bottom: 3.7333333333vw;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.couse-h2 {
+  white-space: nowrap;
+  text-align: center;
+  font-size: 3.513909224vw;
+  color: #63977e;
+  font-family: "Hannari";
+  font-weight: normal;
+  line-height: 1.21;
+  letter-spacing: 0.1054172767vw;
+  text-align: left
+}
+@media screen and (max-width: 1024px) {
+  .couse-h2 {
+    font-size: 4.224vw;
+    line-height: 1.2727272727;
+    letter-spacing: 0.5050505051vw;
+    text-align: center;
+  }
+}
+
+.couse-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 3.2942898975vw;
+}
+@media screen and (max-width: 1024px) {
+  .couse-box {
+    display: block;
+    margin-top: 5.3333333333vw;
+  }
+}
+
+.couse-figure {
+  width: 29.8682284041vw;
+}
+@media screen and (max-width: 1024px) {
+  .couse-figure {
+    width: 100%;
+  }
+}
+
+.couse-desc {
+  width: 44.6559297218vw;
+  padding-top: 0.6588579795vw;
+}
+@media screen and (max-width: 1024px) {
+  .couse-desc {
+    width: 100%;
+    padding-top: 2.6666666667vw;
+  }
+}
+
+.couse-text {
+  font-weight: normal;
+  font-size: 1.9765739385vw;
+  line-height: 1.41;
+  letter-spacing: 0.0988286969vw;
+}
+@media screen and (max-width: 1024px) {
+  .couse-text {
+    font-size: 3.36vw;
+    line-height: 1.5;
+    letter-spacing: 0.36vw;
+  }
+}
+
+.couse-arrow {
+  position: absolute;
+  bottom: -4vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 23.4260614934vw;
+  height: 7.906295754vw;
+}
+@media screen and (max-width: 1024px) {
+  .couse-arrow {
+    width: 28.8vw;
+    height: 9.6vw;
+    bottom: -7vw;
+  }
+}
+
+/*============================================================
+# プレミアムbioシャンプーの
+こだわりポイント
+============================================================*/
+.point {
+  padding-top: 7.3206442167vw;
+  padding-bottom: 4.39238653vw;
+  background-image: url(../img/benefit.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Hannari";
+  font-weight: normal;
+}
+@media screen and (max-width: 1024px) {
+  .point {
+    background-image: url(../img/benefit_sp.jpg);
+    padding-top: 3.2vw;
+    padding-bottom: 5.3333333333vw;
+  }
+}
+
+.point-h2 {
+  font-family: "Hannari";
+  font-weight: normal;
+  color: #63977e;
+  font-size: 4.25rem;
+  line-height: 1.18;
+  letter-spacing: 0.2975rem;
+  text-align: center;
+  margin-bottom: 6.149341142vw;
+}
+@media screen and (max-width: 1024px) {
+  .point-h2 {
+    font-size: 4.8vw;
+    line-height: 1.2;
+    letter-spacing: 1.037037037vw;
+    margin-bottom: 8.8vw;
+  }
+}
+
+.point-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.point-box + .point-box {
+  margin-top: 7.6134699854vw;
+}
+@media screen and (max-width: 1024px) {
+  .point-box + .point-box {
+    margin-top: 8vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .point-box {
+    display: block;
+    margin-bottom: 9.6vw;
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.point-figure {
+  width: 30.9663250366vw;
+}
+@media screen and (max-width: 1024px) {
+  .point-figure {
+    width: 100%;
+    margin-bottom: 9.6vw;
+  }
+}
+
+.point-figcaption {
+  font-family: "Noto";
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.756954612vw;
+  line-height: 1.67;
+  margin-top: 1vw;
+}
+@media screen and (max-width: 1024px) {
+  .point-figcaption {
+    font-size: 2.88vw;
+    line-height: 0.6666666667;
+  }
+}
+
+.point-desc {
+  width: 43.0453879941vw;
+}
+@media screen and (max-width: 1024px) {
+  .point-desc {
+    width: 100%;
+  }
+}
+
+.point-h3 {
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: 3.513909224vw;
+  line-height: 1.67;
+  letter-spacing: 0.1054172767vw;
+  margin-bottom: 1.4641288433vw;
+}
+@media screen and (max-width: 1024px) {
+  .point-h3 {
+    font-size: 4.224vw;
+    line-height: 1.1994949495;
+    letter-spacing: 0.5050505051vw;
+    margin-bottom: 2.1333333333vw;
+  }
+}
+
+.point-sub {
+  font-family: "Noto";
+  font-size: 1.9765739385vw;
+  line-height: 1.48;
+  padding-top: 1.4641288433vw;
+  padding-right: 1.4641288433vw;
+  border-top: 1px solid #212529;
+}
+@media screen and (max-width: 1024px) {
+  .point-sub {
+    padding-top: 1.3333333333vw;
+    padding-bottom: 2.6666666667vw;
+    padding-right: 0;
+    font-size: 3.36vw;
+    line-height: 1.5;
+  }
+}
+
+/*============================================================
+# プレミアムbioシャンプーの使い方
+============================================================*/
+.use {
+  background-image: url(../img/use.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 6.588579795vw;
+  padding-bottom: 3.2942898975vw;
+ 
+}
+@media screen and (max-width: 1024px) {
+  .use {
+    background-image: url(../img/use_sp.jpg);
+    padding-top: 4vw;
+    padding-bottom: 6.6666666667vw;
+  }
+}
+
+.use-h2 {
+  white-space: nowrap;
+  text-align: center;
+  font-family: "Hannari";
+  font-weight: normal;
+  color: #63977e;
+  line-height: 1.18;
+  letter-spacing: 0.149341142vw;
+  font-size: 4.9780380673vw;
+  margin-bottom: 3.3674963397vw;
+}
+@media screen and (max-width: 1024px) {
+  .use-h2 {
+    font-size: 4.8vw;
+    letter-spacing: 0.2105263158vw;
+    line-height: 1.2;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .use-box {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 24.4509516837vw;
+    padding: 2.1229868228vw 0;
+  }
+  .use-box + .use-box {
+    border-top: 1px solid #808080;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .use-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 7.4666666667vw;
+    padding-bottom: 5.3333333333vw;
+  }
+  .use-box + .use-box {
+    border-top: 1px solid #808080;
+  }
+  
+  .first-use {
+    padding-top: 5.8666666667vw;
+  }
+}
+
+
+
+@media screen and (min-width: 1025px) {
+  .use-img {
+    padding-right: 4.9780380673vw;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .use-desc {
+    border-left: 1px solid #808080;
+    padding-left: 4.9780380673vw;
+    flex: 0 0 50%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .use-desc {
+    display: none;
+  }
+}
+
+.step-h3 {
+  font-weight: normal;
+  text-decoration: underline;
+  font-family: "Philosopher";
+  font-style: italic;
+  font-size: 3.513909224vw;
+  line-height: 1.63;
+  letter-spacing: 0.0358711567vw;
+  margin-bottom: 4.39238653vw;
+}
+@media screen and (max-width: 1024px) {
+  .step-h3 {
+    font-size: 4.2133333333vw;
+    margin-bottom: 5.3333333333vw;
+  }
+}
+
+.step-sub {
+  font-size: 1.9765739385vw;
+  line-height: 1.48;
+}
+@media screen and (max-width: 1024px) {
+  .step-sub {
+    line-height: 1.5;
+    font-size: 3.36vw;
+    margin-top: 2.1333333333vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .use-figure {
+    width: 76.8vw;
+    height: 38.4vw;
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
+
+/*============================================================
+# お客様からのよくある質問
+============================================================*/
+.qa {
+  background-color: #f0efed;
+  padding-top: 7.6866764275vw;
+  padding-bottom: 0.2928257687vw;
+}
+@media screen and (min-width: 1025px) {
+  .qa {
+    padding-top: 4vw;
+  }
+}
+
+.qa-h1 {
+  text-align: center;
+  font-family: "Hannari";
+  font-weight: normal;
+  color: #63977e;
+  font-size: 4.9780380673vw;
+  line-height: 1.18;
+  letter-spacing: 0.149341142vw;
+}
+@media screen and (max-width: 1024px) {
+  .qa-h1 {
+    font-size: 4.8vw;
+    line-height: 1.2;
+    letter-spacing: 1.6666666667;
+  }
+}
+
+.qa-box {
+  font-family: "Noto";
+  font-weight: normal;
+  padding: 5.4904831625vw 0;
+}
+.qa-box + .qa-box {
+  border-top: 1px solid #808080;
+}
+@media screen and (max-width: 1024px) {
+  .qa-box {
+    padding: 5.3333333333vw 0;
+  }
+}
+
+.q {
+  font-size: 1.9765739385vw;
+  line-height: 1.48;
+  margin-bottom: 4.5387994143vw;
+  padding-left: 5.1244509517vw;
+  position: relative
+}
+.q::before {
+  content: "Q.";
+  font-size: 3.953147877vw;
+  color: #63977e;
+  font-family: "Philosopher";
+  font-weight: normal;
+  left: 0;
+  top: -20px;
+  position: absolute
+}
+
+.a {
+  font-size: 1.9765739385vw;
+  line-height: 1.48;
+  padding-left: 5.1244509517vw;
+  position: relative
+}
+.a::before {
+  content: "A.";
+  font-size: 3.953147877vw;
+  color: #9d3e3e;
+  font-family: "Philosopher";
+  font-weight: normal;
+  top: -26px;
+  left: 0;
+  position: absolute
+}
+
+@media screen and (max-width: 1024px) {
+  .q {
+    font-size: 3.36vw;;
+    line-height: 1.2;
+    padding-left: 6.6666666667vw;
+    margin-bottom: 4.5333333333vw;
+    position: relative;
+  }
+  .q::before {
+    content: "Q.";
+    font-size: 5.76vw;
+    color: #63977e;
+    font-family: "Philosopher";
+    font-weight: normal;
+    left: 0;
+    top: -14px;
+    position: absolute;
+  }
+
+  .a {
+    font-size: 3.36vw;
+    line-height: 1.2;
+    padding-left: 6.6666666667vw;
+    position: relative;
+  }
+  .a::before {
+    content: "A.";
+    font-size: 5.76vw;
+    color: #9d3e3e;
+    font-family: "Philosopher";
+     font-weight: normal;
+    left: 0;
+    top: -14px;
+    position: absolute;
+  }
+}
+/*============================================================
+# キャンペーン実施中
+============================================================*/
+.cv {
+  padding: 4.5387994143vw 0;
+  font-family: "Noto";
+  background-image: url(../img/cv.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (max-width: 1024px) {
+  .cv {
+    background-image: url(../img/cv_sp.jpg);
+    padding-top: 4vw;
+    padding-bottom: 6.6666666667vw;
+  }
+}
+
+.cv-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 6.588579795vw;
+}
+@media screen and (max-width: 1024px) {
+  .cv-wrapper {
+    margin: 5.6vw 0;
+  
+  }
+}
+
+.cv-desc {
+  width: 51.2445095168vw;
+}
+@media screen and (max-width: 1024px) {
+  .cv-desc {
+    width: 48vw;
+  }
+}
+
+.sample-img {
+  width: 29.2825768668vw;
+}
+@media screen and (max-width: 1024px) {
+  .sample-img {
+    width: 28.8vw;
+  }
+}
+
+.g-pc {
+  margin-top: 1.317715959vw;
+  line-height: 1.29;
+  text-align: center;
+  font-size: 2.0497803807vw;
+}
+@media screen and (max-width: 1024px) {
+  .g-pc {
+    display: none;
+  }
+}
+
+.g-sp {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .g-sp {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1vw;
+    line-height: 1.5;
+    font-size: 2.88vw;
+  }
+}
+
+.cv-title {
+  padding-bottom: 1.9033674963vw;
+  border-bottom: 1px solid #91b3a2;
+  margin-bottom: 2.9282576867vw;
+}
+@media screen and (max-width: 1024px) {
+  .cv-title {
+    padding-bottom: 1.6vw;
+    margin-bottom: 2.7333333333vw;
+  }
+}
+
+.cv-h2 {
+  margin-bottom: 0.439238653vw;
+  white-space: nowrap;
+  font-family: "Hannari";
+  font-weight: normal;
+  font-size: 4.0263543192vw;
+  line-height: 1;
+}
+@media screen and (max-width: 1024px) {
+  .cv-h2 {
+    margin-bottom: 0;
+    line-height: 1.2013888889;
+    font-size: 3.84vw;
+  }
+}
+
+.cv-sub {
+  margin-top: 0.878477306vw;
+  line-height: 1.2857142857;
+  font-size: 2.0497803807vw;
+}
+@media screen and (max-width: 1024px) {
+  .cv-sub {
+    font-size: 2.6666666667vw;
+    line-height: 1.2;
+    letter-spacing: 0.5333333333vw;
+  }
+}
+
+.cv-prices {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 2.4890190337vw;
+}
+@media screen and (max-width: 1024px) {
+  .cv-prices {
+    display: none;
+  }
+}
+
+.cv-prices-sp {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .cv-prices-sp {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2.4890190337vw;
+  }
+}
+
+.philo {
+  font-family: "Philosopher";
+}
+
+.text-box {
+  flex-shrink: 0;
+  flex-grow: 2;
+}
+
+.text-box-sp {
+  flex-shrink: 0;
+  flex-grow: 2;
+}
+
+.text-1 {
+  display: inline-block;
+ background-image: linear-gradient(transparent 47%, #000 8%, transparent 55%);
+  font-size: 1.6875rem;
+  line-height: 1.3333333333;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .text-1-sp {
+    display: inline-block;
+    font-size: 3.36vw;
+    line-height: 1.2;
+    background-image: linear-gradient(transparent 47%, #000 8%, transparent 55%);
+  }
+}
+
+.text-2 {
+  font-size: 2.196193265vw;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 1024px) {
+  .text-2-sp {
+    display: block;
+    font-size: 3.744vw;
+    line-height: 1.5;
+  }
+}
+
+.price-box {
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  flex-grow: 2;
+}
+@media screen and (max-width: 1024px) {
+  .price-box {
+    display: none;
+  }
+}
+
+.price-box-sp {
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  flex-grow: 2;
+}
+
+.price {
+  line-height: 0.8;
+  font-family: "Philosopher";
+  color: #ff0000;
+  font-size: 7.906295754vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .price-sp {
+    line-height: 0.8;
+    font-family: "Philosopher";
+    color: #ff0000;
+    font-size: 10.6666666667vw;
+  }
+}
+
+.price-sub {
+  font-size: 2.8125rem;
+  margin-left: -2vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .price-sub-sp {
+    font-size: 5.3333333333vw;
+    margin-left: -2vw;
+  }
+}
+
+.cv-small {
+  color: #212529;
+  font-size: 1.9765739385vw;
+  line-height: 1.3333333333;
+}
+
+@media screen and (max-width: 1024px) {
+  .cv-small-sp {
+    color: #212529;
+    font-size: 2.6666666667vw;
+    line-height: 1.5;
+  }
+}
+
+.btn-pc {
+  display: inline-block;
+  width: 46.486090776vw;
+  height: 7.467057101vw;
+  border-radius: 10px;
+  background-color: #a7c2b4;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .btn-pc {
+    display: none;
+  }
+}
+
+.now-btn {
+  font-family: "Hannari";
+  position: relative;
+  line-height: 0.71;
+  letter-spacing: 0.3660322108vw;
+  padding-right: 4.2459736457vw;
+  color: #fff;
+  font-size: 3.6603221083vw;
+  line-height: 7.467057101vw;
+  margin-bottom: 1.9765739385vw;
+  padding-right: 5vw
+}
+.now-btn::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.9282576867vw 1.6837481698vw 0 1.6837481698vw;
+  border-color: #ffffff transparent transparent transparent;
+  right: 0;
+  top: 57%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 1024px) {
+  .now-btn {
+    display: none;
+  }
+}
+
+.btn-sp {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .btn-sp {
+    display: inline-block;
+    width: 77.3333333333vw;
+    height: 9.3333333333vw;
+    border-radius: 10px;
+    background-color: #a7c2b4;
+    text-align: center;
+  }
+}
+
+.now-btn-sp {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .now-btn-sp {
+    font-family: "Hannari";
+    position: relative;
+    display: block;
+    letter-spacing: 3vw;
+    color: #fff;
+    font-size: 4.32vw;
+    line-height: 9.3333333333vw;
+    padding-right: 3vw
+  }
+  .now-btn-sp::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3.7333333333vw 2.1333333333vw 0 2.1333333333vw;
+    border-color: #ffffff transparent transparent transparent;
+    right: 18vw;
+    top: 54%;
+    transform: translateY(-50%);
+  }
+}
+
+.cancel {
+  font-size: 2.5rem;
+  color: #bc0000;
+  margin-bottom: 0.878477306vw;
+}
+@media screen and (max-width: 1024px) {
+  .cancel {
+    font-size: 3.552vw;
+    line-height: 1.5;
+  }
+}
+
+.cancel-sub {
+  white-space: nowrap;
+  display: block;
+  font-size: 2.196193265vw;
+  line-height: 1.24;
+  letter-spacing: 0.0636896047vw;
+}
+@media screen and (max-width: 1024px) {
+  .cancel-sub {
+    font-size: 2.6666666667vw;
+    line-height: 1.2;
+    letter-spacing: 0.8vw;
+  }
+}
+
+.liner {
+  display: inline-block;
+  background-image: linear-gradient(transparent 80%, #b391a2 20%);
+}
+
+.cv-desc {
+  width: 46.486090776vw;
+}
+@media screen and (max-width: 1024px) {
+  .cv-desc {
+    width: 45.3333333333vw;
+  }
+}
+
+/*============================================================
+# contact
+============================================================*/
+.contact {
+  font-family: "Gen";
+  padding-top: 5.0512445095vw;
+  padding-bottom: 6.6617862372vw;
+}
+
+.contact-h2 {
+  font-family: "Gen";
+  margin-bottom: 8.1991215227vw;
+}
+@media screen and (max-width: 1024px) {
+  .contact-h2 {
+    margin-top: 5.3333333333vw;
+    margin-bottom: 8vw;
+  }
+}
+
+.payment-h2 {
+  font-family: "Gen";
+  font-weight: bold;
+  margin-bottom: 7.027818448vw;
+}
+@media screen and (max-width: 1024px) {
+  .payment-h2 {
+    margin-top: 11.7333333333vw;
+    margin-bottom: 8.8vw;
+  }
+}
+
+.payment-h2,
+.contact-h2 {
+  border-radius: 10px;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0.4758418741vw;
+  line-height: 0.8350515464;
+  font-size: 2.9282576867vw;
+  padding: 1.0980966325vw 0;
+  background-color: #f1efed;
+}
+@media screen and (max-width: 1024px) {
+  .payment-h2,
+.contact-h2 {
+    letter-spacing: 16.049382716;
+    font-size: 4.32vw;
+    padding: 1.3333333333vw 0;
+  }
+}
+
+.label-box {
+  margin-bottom: 7.6134699854vw;
+}
+@media screen and (max-width: 1024px) {
+  .lavel-box {
+    margin-bottom: 9.8666666667vw;
+  }
+}
+
+.contact-form {
+  margin-bottom: 6.4421669107vw;
+  padding-top: 5.1244509517vw;
+  padding-bottom: 6.588579795vw;
+  padding-left: 5.1244509517vw;
+  padding-right: 5.1244509517vw;
+  border: solid 1px #808080;
+  background-color: #fff;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .contact-form {
+    padding: 4vw 4vw 8vw;
+  }
+}
+.contact-form p + p {
+  margin-top: 3.513909224vw;
+}
+@media screen and (max-width: 1024px) {
+  .contact-form p + p {
+    margin-top: 4vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .contact-form label {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 29.3557833089vw;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contact-form label {
+    line-height: 1.5;
+    font-size: 3.36vw;
+  }
+}
+
+.contact-form span {
+  font-size: 1.9765739385vw;
+  line-height: 1.4814814815;
+}
+@media screen and (max-width: 1024px) {
+  .contact-form span {
+    line-height: 1.5;
+    font-size: 3.36vw;
+  }
+}
+
+.required {
+  
+  border-radius: 4px;
+  line-height: 1.4814814815;
+  font-size: 1.9765739385vw;
+  color: #fff;
+  background-color: #ff0000;
+  margin-right: 1.25rem;
+  padding: 0.2928257687vw;
+}
+@media screen and (max-width: 1024px) {
+  .required {
+    line-height: 1.5;
+    font-size: 2.88vw;
+    padding: 0.5333333333vw;
+  }
+}
+
+.opt {
+  margin-right: 1.25rem;
+  border-radius: 4px;
+  padding: 0.2928257687vw;
+  line-height: 1.4814814815;
+  font-size: 1.9765739385vw;
+  color: #fff;
+  background-color: #808080;
+}
+@media screen and (max-width: 1024px) {
+  .opt {
+    line-height: 1.5;
+    font-size: 2.88vw;
+    padding: 0.5333333333vw;
+  }
+}
+
+::placeholder {
+  font-family: "Gen";
+  position: relative;
+  font-size: 1.9765739385vw;
+  top: 0.2928257687vw;
+  left: 0.5856515373vw;
+}
+@media screen and (max-width: 1024px) {
+
+  ::placeholder {
+    font-size: 2.88vw;
+    line-height: 6.6666666667vw;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding-left: 0.5856515373vw;
+  padding-top: 0.5856515373vw;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.9765739385vw;
+}
+
+.select-wrap {
+  position: relative;
+  padding-left: 0.5856515373vw;
+  line-height: 1.4814814815;
+  font-size: 1.9765739385vw;
+  width: 23.0600292826vw;
+  height: 4.39238653vw;
+  border-radius: 4px;
+  border: solid 1px #d3d3d3;
+}
+@media screen and (max-width: 1024px) {
+  .select-wrap {
+    line-height: 1.5;
+    font-size: 3.36vw;
+    width: 100%;
+    height: 6.6666666667vw;
+    margin-top: 1.0666666667vw;
+  }
+
+  .select-wrap::after {
+    top: 33%;
+  }
+}
+
+.select-box {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.select-wrap::after {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+  width: 7px;
+  height: 7px;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(45deg);
+  pointer-events: none;
+  content: "";
+}
+
+option {
+  position: relative;
+}
+option::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1.0980966325vw;
+  height: 1.0980966325vw;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  transform: rotate(45deg);
+}
+
+input[type=text],
+input[type=submit],
+input[type=postal],
+input[type=tel],
+input[type=password] {
+  width: 23.0600292826vw;
+  height: 4.39238653vw;
+  border-radius: 4px;
+  border: solid 1px #d3d3d3;
+}
+@media screen and (max-width: 1024px) {
+input[type=text],
+input[type=submit],
+input[type=postal],
+input[type=tel],
+input[type=password] {
+    width: 100%;
+    height: 6.6666666667vw;
+    margin-top: 1.0666666667vw;
+  }
+}
+
+input {
+  padding-left: 1vw;
+}
+
+#addressLevel1,
+#addressLevel2,
+#email {
+  width: 57.7981651376vw;
+  height: 5.504587156vw;
+  border-radius: 4px;
+  border: solid 1px #d3d3d3;
+}
+@media screen and (max-width: 1024px) {
+  #addressLevel1,
+#addressLevel2,
+#email {
+    width: 100%;
+    height: 6.6666666667vw;
+    margin-top: 1.0666666667vw;
+  }
+}
+
+#submit_button {
+  display: block;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.4509516837vw;
+  line-height: 8.345534407vw;
+  font-size: 4.0995607613vw;
+  width: 39.9707174231vw;
+  height: 8.345534407vw;
+  border-radius: 10px;
+  background-image: linear-gradient(to top, #31a169, #91b3a2);
+  padding-right: 3vw;
+  margin-bottom: 6.6617862372vw;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative
+}
+
+#submit_button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 3.6603221083vw 1.8301610542vw 0 1.8301610542vw;
+  border-color: #ffffff transparent transparent transparent;
+  right: 8vw;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 1024px) {
+  #submit_button {
+    width: 38.6666666667vw;
+    height: 8vw;
+    line-height: 8vw;
+    letter-spacing: 0.0878477306vw;
+    font-size: 4.32vw;
+    margin-top: 10.1333333333vw;
+    margin-bottom: 8vw;
+    position: relative;
+  }
+  #submit_button::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3.7333333333vw 2.1333333333vw 0 2.1333333333vw;
+    border-color: #ffffff transparent transparent transparent;
+    right: 6vw;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+#form_submit {
+  padding-bottom: 2vw;
+}
+
+#form_has_error {
+  text-align: center;
+  color: #f00;
+  height: 4vw;
+  font-size: 2vw;
+  margin-top: 2vw;
+}
+
+/*============================================================
+# footer
+============================================================*/
+.footer {
+  background-color: #e3fcf4;
+  height: 7.3206442167vw;
+}
+@media screen and (max-width: 1024px) {
+  .footer {
+    height: 9.6vw;
+  }
+}
+
+.footer-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-item a {
+  white-space: nowrap;
+  color: #212529;
+  font-size: 1.4641288433vw;
+  padding: 0 0.878477306vw;
+  line-height: 0;
+}
+@media screen and (max-width: 1024px) {
+  .footer-item a {
+    font-size: 2.8vw;
+    margin-top: 2.1333333333vw;
+    line-height: 0.7142857143;
+  }
+}
+
+.r-border {
+  border-right: 1px solid #212529;
+}
+
+/*============================================================
+# ラジオボタンの装飾
+============================================================*/
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
+.payment-label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 2.9282576867vw;
+}
+.payment-label::before, .payment-label::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.payment-label::before {
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #000;
+  width: 2.0497803807vw;
+  height: 2.0497803807vw;
+  left: 0;
+}
+.payment-label::after {
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 0;
+  width: 1.1713030747vw;
+  height: 1.1713030747vw;
+  left: 0.439238653vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .payment-label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 5.3333333333vw;
+  }
+  .payment-label::before, .payment-label::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+  }
+  .payment-label::before {
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #000;
+    width: 3.7333333333vw;
+    height: 3.7333333333vw;
+    left: 0;
+  }
+  .payment-label::after {
+    background-color: #000;
+    border-radius: 50%;
+    opacity: 0;
+    width: 2.6666666667vw;
+    height: 2.6666666667vw;
+    left: 0.5333333333vw;
+  }
+}
+input:checked + .payment-label::after {
+  opacity: 1;
+}
+
+.payment li + li {
+  margin-top: 4.5387994143vw;
+}
+@media screen and (max-width: 1024px) {
+  .payment li + li {
+    margin-top: 6.4vw;
+  }
+}
+
+.payment-label {
+  line-height: 1.4814814815;
+  font-size: 1.9765739385vw;
+}
+@media screen and (max-width: 1024px) {
+  .payment-label {
+    margin-top: 6.4vw;
+    padding-left: 10.6666666667vw;
+    line-height: 1.5;
+    font-size: 3.36vw;
+  }
+}
+
+.payment {
+  margin-left: 1.9033674963vw;
+  margin-bottom: 7.906295754vw;
+}
+
+.alert-box {
+  margin-bottom: -1rem;
+}
+
+.alert {
+  color: red;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
